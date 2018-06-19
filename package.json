@@ -1,0 +1,20 @@
+{
+  "name": "noodle",
+  "version": "0.0.1",
+  "description": "Does things.",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "pusher": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/maddox/noodle.git"
+  },
+  "bugs": {
+    "type": "git",
+    "url": "git://github.com/maddox/noodle/issues"
+  },
+  "homepage": "https://github.com/maddox/noodle",
+  "author": "Jon Maddox <jon@jonmaddox.com>"
+}
