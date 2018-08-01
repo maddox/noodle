@@ -1,3 +1,4 @@
+const updater = require('./lib/updater');
 const logger = require('./lib/logger');
 
 (function(){
@@ -19,3 +20,5 @@ const logger = require('./lib/logger');
       oldError.apply(console, arguments)
     };
 })();
+
+updater.update()
