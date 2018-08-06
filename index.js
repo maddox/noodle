@@ -21,4 +21,4 @@ const logger = require('./lib/logger');
     };
 })();
 
-updater.update()
+// updater.update()
