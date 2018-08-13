@@ -5,7 +5,6 @@
   "main": "index.js",
   "dependencies": {
     "dotenv": "^6.0.0",
-    "pusher": "^2.0.0"
   },
   "repository": {
     "type": "git",
