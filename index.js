@@ -5,19 +5,25 @@ const logger = require('./lib/logger');
     var oldLog = console.log;
     console.log = function () {
       logger.info(arguments)
-      oldLog.apply(console, arguments)
+      if (!process.env.NOODLE_ENV) {
+        oldLog.apply(console, arguments)
+      }
     };
 
     var oldWarn = console.warn;
     console.warn = function () {
       logger.warn(arguments)
-      oldWarn.apply(console, arguments)
+      if (!process.env.NOODLE_ENV) {
+        oldWarn.apply(console, arguments)
+      }
     };
 
     var oldError = console.error;
     console.error = function () {
       logger.error(arguments)
-      oldError.apply(console, arguments)
+      if (!process.env.NOODLE_ENV) {
+        oldError.apply(console, arguments)
+      }
     };
 })();
 
