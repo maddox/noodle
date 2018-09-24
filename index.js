@@ -4,9 +4,17 @@ const logger = require('./lib/logger');
 (function(){
     var oldLog = console.log;
     console.log = function () {
-      logger.info(arguments)
+      logger.log(arguments)
       if (!process.env.NOODLE_ENV) {
         oldLog.apply(console, arguments)
+      }
+    };
+
+    var oldInfo = console.info;
+    console.info = function () {
+      logger.info(arguments)
+      if (!process.env.NOODLE_ENV) {
+        oldInfo.apply(console, arguments)
       }
     };
 
